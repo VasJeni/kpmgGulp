@@ -1,0 +1,28 @@
+.kpmg {
+  &--offer {
+    &-wrapper{
+      background: $colortxwhite;
+      color: $colorgrey;
+    }
+    &__description {
+      margin: 70px auto;
+      h3 {
+        text-align: center;
+        font-size: 36px;
+        color: $colorlightblue;
+      }
+      p {
+        margin: 20px auto;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.2em;
+      }
+    }
+    &__block {
+      @include flexbox();
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      text-align: center;
+    }
+  }
+}

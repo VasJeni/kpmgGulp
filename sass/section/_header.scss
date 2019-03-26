@@ -1,0 +1,43 @@
+.kmpg {
+  &--header {
+    @include padding-vertical(28px);
+    color: $colortxwhite;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    &__wrapper {
+      background-color: $colorbgheader;
+    }
+    &__nav {
+      ul {
+        @include flexbox();
+        li {
+          margin: 0 10px;
+          text-transform: capitalize;
+          font-size: 12px;
+          &:hover{
+            @include box-shadow(0, 1px, 0, $colortxwhite)
+          }
+        }
+      }
+    }
+    &-btn {
+      background: inherit;
+      @include border-radius(30px);
+      border: 1px solid $colorblue;
+      padding: 15px 30px;
+      color: $colortxwhite;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 30px;
+    }
+    &__select {
+      background: inherit;
+      color: $colortxwhite;
+      border: none;
+    }
+  }
+}

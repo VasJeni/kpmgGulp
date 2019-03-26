@@ -1,0 +1,84 @@
+.kpmg {
+  &--progress {
+    @include padding-vertical(40px);
+    color: $colortxwhite;
+    &-wrapper {
+      background: $colorblue;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__scale {
+      @include flexbox();
+      @include justify-content(space-between);
+      margin-top: 150px;
+      margin-bottom: 100px;
+    }
+    &__stage {
+      text-align: center;
+      &-circle {
+        height: 12px;
+        width: 12px;
+        @include border-radius(50%);
+        background: $colortxwhite;
+        margin: 0 auto;
+        position: relative;
+        &:before {
+          display: block;
+          content: '';
+          height: 1px;
+          border-top: 1px dashed $colortxwhite;
+          top: 50%;
+          z-index: 2;
+          position: absolute;
+          left: -10000000%;
+          right: -10000000%;
+        }
+        &-text {
+          text-align: center;
+        }
+      }
+      &-active {
+        z-index: 100;
+        position: relative;
+        background: #1b5eaa;
+        @include padding-vertical(15px);
+        @include translate(0, -50%);
+        @include border-radius(10px);
+        & > * {
+          margin: auto auto;
+          font-size: 12px;
+          text-align: center;
+        }
+        p {
+          font-size: 16px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        & img {
+          margin: 20px;
+          width: 80%;
+        }
+      }
+      &-text {
+        margin: 10px auto;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+    &__scroll {
+      p {
+        text-align: center;
+        button {
+          background: inherit;
+          border : 1px solid $colortxwhite;
+          @include border-radius(15px);
+          padding: 8px 9px 10px 10px;
+          margin: 0 10px;
+          color: $colortxwhite;
+          @include rotate(-90);
+        }
+      }
+    }
+  }
+}
