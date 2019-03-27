@@ -1,0 +1,13 @@
+.kpmg {
+  &--about {
+    &__wrapper {
+      background: $colorabiutwrapper;
+    }
+    &__title {
+    }
+    &__items {
+      @include flexbox();
+      @include flex-direction(row)
+    }
+  }
+}

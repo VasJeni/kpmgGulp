@@ -4,13 +4,9 @@
       background: $colortxwhite;
       color: $colorgrey;
     }
+    @include padding-vertical(100px);
     &__description {
-      margin: 70px auto;
-      h3 {
-        text-align: center;
-        font-size: 36px;
-        color: $colorlightblue;
-      }
+      margin: auto auto;
       p {
         margin: 20px auto;
         font-size: 14px;
@@ -23,6 +19,53 @@
       @include flex-direction(row);
       @include justify-content(space-between);
       text-align: center;
+    }
+    &__title {
+      position: relative;
+      @include border-radius(50%);
+      border: 1px solid rgba(34, 59, 126, 0.42);
+      & h3 {
+        position:  absolute;
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, -50%);
+        font-size: 50px;
+        color: $coloroffertitle;
+      }
+      &:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+      &:after {
+        display: block;
+        @include border-radius(50%);
+        position: absolute;
+        content: '';
+        height: 10px;
+        width: 10px;
+        top: 13%;
+        left: 13%;
+        background: $colorbgheader;
+        z-index: 100;
+      }
+    }
+    &__advantages {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(space-around);
+      &-item {
+        & > h2 {
+          height: 16px;
+          color: $colorlightblue;
+          font-weight: bold;
+        }
+        & > p {
+          @include padding-vertical(22px);
+          font-size: 12px;
+          color : $colorgrey;
+        }
+      }
     }
   }
 }

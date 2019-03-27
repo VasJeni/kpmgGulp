@@ -3,3 +3,13 @@ $colortxwhite : #ffffff;
 $colorblue : #0072bc;
 $colorgrey : #223b7e;
 $colorlightblue: #1c8ece;
+$coloroffertitle: #1b5eaa;
+$colorabiutwrapper : #e8f4fa;
+
+._section-title{
+  font-size: 36px;
+  font-weight: bold;
+  color: $colorlightblue;
+  text-align: center;
+  text-transform: uppercase;
+}
