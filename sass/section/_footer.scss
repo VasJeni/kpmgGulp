@@ -1,0 +1,37 @@
+.kpmg {
+  &--footer {
+    text-align: center;
+    &__wrapper {
+      background: $colortxwhite;
+      @include padding-vertical(40px,25px)
+    }
+    &__mail {
+      font-size: 12px;
+      color: #3d5089;
+      margin-bottom: 25px;
+      & a {
+        color: #3697d1;
+        font-size: 12px;
+      }
+    }
+    &__items {
+      & > a {
+        font-size: 10px;
+        color: $colorlightblue;
+        text-decoration: underline;
+        @include box-shadow(1px, 0px, 0px, $colorlightblue);
+        padding:  0 10px;
+        &:last-child {
+          -webkit-box-shadow: none;
+          -moz-box-shadow:none;
+          box-shadow: none;
+        }
+      }
+    }
+    &__copyright {
+      font-size: 10px;
+      color: $colorbgheader;
+      margin: 15px auto 0 auto;
+    }
+  }
+}

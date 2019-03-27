@@ -35,9 +35,22 @@
       font-size: 30px;
     }
     &__select {
-      background: inherit;
+      background: rgba(255, 255, 255, 0);
+      position: relative;
       color: $colortxwhite;
       border: none;
+      -webkit-appearance: none;
+      -moz-appearance:    none;
+      appearance:         none;
+      &:before {
+        position: absolute;
+        content: '>';
+        display: block;
+        color: $colortxwhite;
+        font-size: 12px;
+        top: 0;
+        left: 0;
+      }
     }
   }
 }

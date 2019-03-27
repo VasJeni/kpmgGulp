@@ -166,7 +166,7 @@
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
 }
-
+// transform
 @mixin transform($transforms) {
   -moz-transform: $transforms;
   -o-transform: $transforms;

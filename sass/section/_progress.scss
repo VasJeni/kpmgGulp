@@ -4,6 +4,7 @@
     color: $colortxwhite;
     &-wrapper {
       background: $colorblue;
+      overflow: hidden;
     }
     &__text {
       font-size: 14px;
@@ -11,8 +12,8 @@
     &__scale {
       @include flexbox();
       @include justify-content(space-between);
-      margin-top: 150px;
-      margin-bottom: 100px;
+      margin-top: 250px;
+      margin-bottom: 80px;
     }
     &__stage {
       text-align: center;
@@ -55,7 +56,7 @@
           text-transform: uppercase;
           text-align: center;
         }
-        & img {
+        & svg {
           margin: 20px;
           width: 80%;
         }
