@@ -24,3 +24,27 @@ body {
   font-weight: 400;
   background: black;
 }
+a:focus,
+a:hover,
+a:active,
+a:focus-within{
+  border: none;
+  outline: none;
+}
+select:focus,
+select:hover,
+select:active,
+select:focus-within{
+  border: none;
+  outline: red;
+}
+option:focus,
+option:hover,
+option:active,
+option:focus-within{
+  border: none;
+  outline: red;
+}
+*:focus {
+  outline: none;
+}

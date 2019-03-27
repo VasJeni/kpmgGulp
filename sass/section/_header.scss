@@ -36,12 +36,31 @@
     }
     &__select {
       background: rgba(255, 255, 255, 0);
-      position: relative;
       color: $colortxwhite;
       border: none;
       -webkit-appearance: none;
       -moz-appearance:    none;
       appearance:         none;
+      box-sizing: border-box;
+      padding: 0 20px 0 0;
+      position: relative;
+      z-index: 100;
+      &__wrapper{
+        position: relative;
+        z-index: 100;
+        box-sizing: border-box;
+        &:before {
+          content: '>';
+          right: 0;
+          top: 0;
+          color: white;
+          display: block;
+          position: absolute;
+          z-index: 1;
+          @include rotate(90);
+          font-weight: bold;
+        }
+      }
       &:before {
         position: absolute;
         content: '>';
