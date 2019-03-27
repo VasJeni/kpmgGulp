@@ -2,12 +2,48 @@
   &--about {
     &__wrapper {
       background: $colorabiutwrapper;
+      padding: 80px;
     }
     &__title {
+      margin-bottom: 30px;
     }
-    &__items {
-      @include flexbox();
-      @include flex-direction(row)
+    &__item {
+      @include padding-vertical(30px);
+      & svg {
+        margin: auto auto;
+        display: block;
+        margin-bottom: 20px;
+      }
+      & h2 {
+        font-size: 16px;
+        @include padding-vertical(20px);
+        color: $colorlightblue;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      & a {
+        text-decoration: underline;
+        margin: 10px auto;
+        display: inline-block;
+        font-size: 10px;
+        &:last-child {
+          margin: 20px auto;
+          font-size: 16px;
+        }
+      }
+      &s {
+        @include flexbox();
+        @include flex-direction(row);
+        color: $colorgrey;
+        text-align: center;
+      }
+      & p {
+        font-size: 12px;
+        line-height: 1.2em;
+        & span {
+          font-weight: bold;
+        }
+      }
     }
   }
 }

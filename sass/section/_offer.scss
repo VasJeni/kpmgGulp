@@ -31,6 +31,7 @@
         @include translate(-50%, -50%);
         font-size: 50px;
         color: $coloroffertitle;
+        text-transform: uppercase;
       }
       &:before {
         content: "";
@@ -56,6 +57,7 @@
       @include justify-content(space-around);
       &-item {
         & > h2 {
+          text-transform: uppercase;
           height: 16px;
           color: $colorlightblue;
           font-weight: bold;
