@@ -24,6 +24,7 @@
       position: relative;
       @include border-radius(50%);
       border: 1px solid rgba(34, 59, 126, 0.42);
+      padding: 0;
       & h3 {
         position:  absolute;
         top: 50%;
@@ -54,16 +55,18 @@
     &__advantages {
       @include flexbox();
       @include flex-direction(column);
-      @include justify-content(space-around);
+      @include justify-content(space-between);
       &-item {
-        & > h2 {
+        @include padding-vertical(10px);
+        & h2 {
           text-transform: uppercase;
           height: 16px;
           color: $colorlightblue;
           font-weight: bold;
+          display: inline-block;
         }
         & > p {
-          @include padding-vertical(22px);
+          @include padding-vertical(10px);
           font-size: 12px;
           color : $colorgrey;
         }

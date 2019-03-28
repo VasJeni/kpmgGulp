@@ -2,7 +2,7 @@
   &--about {
     &__wrapper {
       background: $colorabiutwrapper;
-      padding: 80px;
+      padding: 80px 0;
     }
     &__title {
       margin-bottom: 30px;
@@ -13,6 +13,7 @@
         margin: auto auto;
         display: block;
         margin-bottom: 20px;
+        height: 61px;
       }
       & h2 {
         font-size: 16px;

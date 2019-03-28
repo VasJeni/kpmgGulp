@@ -15,13 +15,20 @@
       }
     }
     &__items {
+      @include flexbox();
+      @include flex-wrap(wrap);
+      @include flex-direction(row);
+      @include justify-content(center);
+
       & > a {
         font-size: 10px;
         color: $colorlightblue;
         text-decoration: underline;
-        @include box-shadow(1px, 0px, 0px, $colorlightblue);
+        //@include box-shadow(1px, 0, 0, $colorgrey);
+        box-shadow: -1px 0px 0px 0px $colorgrey, 1px 0px 0px 0px $colorgrey;
         padding:  0 10px;
-        &:last-child {
+        margin: 2px auto;
+        &:nth-child(odd) {
           -webkit-box-shadow: none;
           -moz-box-shadow:none;
           box-shadow: none;

@@ -1,0 +1,146 @@
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .kpmg {
+    &--logo {
+      order:3;
+    }
+    &--header{
+      @include flex-wrap(wrap-reverse);
+      &__title {
+        order:4;
+      }
+      &-btn {
+        order:5;
+      }
+      &__nav {
+        order:2;
+      }
+      &__select {
+        order: 1;
+      }
+    }
+  }
+}
+@media (max-width: 1023px) and (min-width: 992px) {
+  .kpmg {
+    &--logo {
+      order:3;
+    }
+    &--header{
+      @include flex-wrap(wrap-reverse);
+      &__title {
+        order:4;
+      }
+      &-btn {
+        order:5;
+      }
+      &__nav {
+        order:2;
+      }
+      &__select {
+        order: 1;
+      }
+    }
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .kpmg {
+    &--logo {
+      order:4;
+    }
+    &--header{
+      @include flex-wrap(wrap-reverse);
+      &__title {
+        order:5;
+      }
+      &-btn {
+        order:3;
+      }
+      &__nav {
+        order:2;
+      }
+      &__select {
+        order: 1;
+        &__wrapper{
+          &:before {
+            right: -20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) and (min-width: 567px) {
+  .kpmg {
+    &--header {
+      @include flex-wrap(wrap-reverse);
+      &__title {
+        order: 5;
+      }
+      &-btn {
+        order: 3;
+      }
+      &__nav {
+        order: 2;
+      }
+      &__select {
+        order: 1;
+        &__wrapper {
+          &:before {
+            right: -20px;
+          }
+        }
+      }
+    }
+    &--about__items {
+      @include flex-wrap(wrap);
+    }
+    &--offer__title {
+      margin: 10px auto;
+    }
+  }
+}
+@media (max-width: 566px) {
+  .kpmg {
+    &--logo {
+      order:6;
+    }
+    &--header{
+      @include flex-wrap(wrap-reverse);
+      &__title {
+        order:5;
+      }
+      &-btn {
+        order:3;
+      }
+      &__nav {
+        order:2;
+      }
+      &__select {
+        order: 1;
+        &__wrapper{
+          &:before {
+            right: -3em;
+          }
+        }
+      }
+    }
+    &--progress {
+      &__scale {
+        @include flex-wrap(wrap);
+        margin: 30px;
+      }
+      &__stage {
+        margin: 20px auto;
+      }
+      &__stage-active {
+        @include translate(0, 0);
+      }
+    }
+    &--offer__title {
+      margin: 10px auto;
+    }
+    &--about__items {
+      @include flex-wrap(wrap);
+    }
+  }
+}

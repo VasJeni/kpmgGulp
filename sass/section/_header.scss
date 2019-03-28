@@ -1,14 +1,20 @@
-.kmpg {
+
+.kpmg {
+  .logo {
+    @include padding-vertical(0);
+  }
   &--header {
-    @include padding-vertical(28px);
+    @include padding-vertical(20px);
     color: $colortxwhite;
     @include flexbox();
-    @include align-items(center);
+    @include align-items(baseline);
     @include justify-content(space-between);
+    @include flex-wrap(wrap);
     &__wrapper {
       background-color: $colorbgheader;
     }
     &__nav {
+      margin-top: 10px;
       ul {
         @include flexbox();
         li {
@@ -22,6 +28,7 @@
       }
     }
     &-btn {
+      margin-top: 10px;
       background: inherit;
       @include border-radius(30px);
       border: 1px solid $colorblue;
@@ -31,10 +38,13 @@
       text-transform: uppercase;
     }
     &__title {
+      margin-top: 10px;
       font-weight: bold;
       font-size: 30px;
+      text-align: center;
     }
     &__select {
+      margin-top: 10px;
       background: rgba(255, 255, 255, 0);
       color: $colortxwhite;
       border: none;
@@ -42,9 +52,12 @@
       -moz-appearance:    none;
       appearance:         none;
       box-sizing: border-box;
-      padding: 0 20px 0 0;
+      padding: 0 20px 0 20px;
       position: relative;
       z-index: 100;
+      & option {
+        color: $colorgrey;
+      }
       &__wrapper{
         position: relative;
         z-index: 100;
@@ -52,16 +65,17 @@
         &:before {
           content: '>';
           right: 0;
-          top: 0;
-          color: white;
+          top: 10px;
+          color: $colortxwhite;
+          font-weight: bold;
           display: block;
           position: absolute;
           z-index: 1;
           @include rotate(90);
-          font-weight: bold;
+
         }
       }
-      &:before {
+      /*&:before {
         position: absolute;
         content: '>';
         display: block;
@@ -69,7 +83,7 @@
         font-size: 12px;
         top: 0;
         left: 0;
-      }
+      }*/
     }
   }
 }
