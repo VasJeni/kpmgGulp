@@ -71,6 +71,9 @@
 }
 @media (max-width: 767px) and (min-width: 567px) {
   .kpmg {
+    &--logo {
+      order:6;
+    }
     &--header {
       @include flex-wrap(wrap-reverse);
       &__title {
@@ -86,7 +89,7 @@
         order: 1;
         &__wrapper {
           &:before {
-            right: -20px;
+            right: -2rem;
           }
         }
       }
@@ -103,6 +106,7 @@
   .kpmg {
     &--logo {
       order:6;
+      margin: auto auto;
     }
     &--header{
       @include flex-wrap(wrap-reverse);
