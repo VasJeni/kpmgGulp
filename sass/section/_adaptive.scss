@@ -94,6 +94,9 @@
         }
       }
     }
+    &--offer__title h3{
+      font-size: 2rem;
+    }
     &--about__items {
       @include flex-wrap(wrap);
     }
